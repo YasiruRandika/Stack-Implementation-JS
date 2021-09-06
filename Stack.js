@@ -1,6 +1,6 @@
 function Stack() {
-  var elements = [];
-  var top = 0;
+  let elements = [];
+  let top = 0;
 
   Stack.prototype.push = function (item) {
     elements[top] = item;
@@ -24,7 +24,7 @@ function Stack() {
     }
     return elements[top - 1];
   };
-  Stack.prototype.isEmpty = function () {
+  const isEmpty = function () {
     return top === 0;
   };
 }
